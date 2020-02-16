@@ -64,10 +64,10 @@ async function detail(id) {
   const disk_used = info.disk.used / 1024.0;
   const disk_usage = info.disk.percent + '%';
   const disk = `${disk_used.toFixed(1)}G / ${disk_limit.toFixed()}G`;
-  const bandwidth_limit = info.bandwidth.limit / 1024.0;
-  const bandwidth_used = info.bandwidth.used / 1024.0;
+  const bandwidth_limit = info.bandwidth.limit / 1024.0 / 1024.0;
+  const bandwidth_used = info.bandwidth.used / 1024.0 / 1024.0;
   const bandwidth_usage = info.bandwidth.percent + '%';
-  const bandwidth = `${bandwidth_used.toFixed(1)}G / ${bandwidth_limit.toFixed()}G`;
+  const bandwidth = `${bandwidth_used.toFixed(1)}T / ${bandwidth_limit.toFixed(1)}T`;
 
   const usageTable = new Table({
     colWidths: [11, 15, 9, 11, 15, 9]

@@ -1,17 +1,21 @@
 {
   "name": "qexw-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "vincent0700 (https://vincentstudio.info)",
   "email": "wang.yuanqiu007@gmail.com",
   "description": "A Commandline tool for https://www.qexw.com",
   "license": "MIT",
   "keywords": [
     "cli",
-    "vps",
+    "puppeteer",
     "qexw"
   ],
   "bin": {
     "qexw": "./src/cli.js"
+  },
+  "repository": {
+    "url": "git@github.com:Vincent0700/qexw-cli.git",
+    "type": "git"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
