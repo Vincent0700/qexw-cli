@@ -1,0 +1,36 @@
+{
+  "name": "qexw-cli",
+  "version": "0.1.0",
+  "author": "vincent0700 (https://vincentstudio.info)",
+  "email": "wang.yuanqiu007@gmail.com",
+  "description": "A Commandline tool for https://www.qexw.com",
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "vps",
+    "qexw"
+  ],
+  "bin": {
+    "qexw": "./src/cli.js"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.3",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cli-table": "^0.3.1",
+    "colors": "^1.4.0",
+    "commander": "^4.1.1",
+    "inquirer": "^7.0.4",
+    "jsonfile": "^5.0.0",
+    "puppeteer": "^2.1.1",
+    "shelljs": "^0.8.3"
+  }
+}
