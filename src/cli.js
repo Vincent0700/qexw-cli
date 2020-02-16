@@ -2,7 +2,6 @@
 
 require('colors');
 const path = require('path');
-const jf = require('jsonfile');
 const program = require('commander');
 const login = require('./login');
 const detail = require('./detail');
@@ -11,7 +10,7 @@ const detail = require('./detail');
 const DIR_PROJECT = path.resolve(__dirname, '../');
 const PATH_PKG = path.resolve(DIR_PROJECT, './package.json');
 
-const pkg = jf.readFileSync(PATH_PKG);
+const pkg = require(PATH_PKG);
 
 /* ---- CLI ---- */
 
