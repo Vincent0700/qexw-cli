@@ -3,12 +3,14 @@
 [![NPM](https://nodei.co/npm/qexw-cli.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/qexw-cli)
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/vincent0700/qexw-cli/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/v/qexw-cli.svg?style=plastic)](https://www.npmjs.com/package/qexw-cli)
+[![npm](https://img.shields.io/npm/v/qexw-cli.svg)](https://www.npmjs.com/package/qexw-cli)
 [![npm](https://img.shields.io/npm/dm/qexw-cli.svg)](https://www.npmjs.com/package/qexw-cli)
 
-企鹅小屋VPS脚本
+企鹅小屋 VPS 脚本
 
-## Install
+![](./docs/demo.gif)
+
+## 安装
 
 ```bash
 $ npm install -g qexw-cli
@@ -20,7 +22,7 @@ Or
 $ yarn global add qexw-cli
 ```
 
-## Usage
+## 用法
 
 ```
 $ qexw -h
@@ -37,9 +39,9 @@ Commands:
   detail <id>    Get product detail
 ```
 
-## Example
+## 示例
 
-### Log into account
+### 登陆账户
 
 ```
 $ qexw login
@@ -50,10 +52,16 @@ $ qexw login
 [QEXW] Welcome, Vincent
 ```
 
-### Show detail of VPS
+### 获取详情
+
+你可以在产品管理页获取产品 ID
+
+![](./docs/pid.jpg)
+
+---
 
 ```
-$ qexw detail 6181
+$ qexw detail 6195
 
 # Basic Info
 ┌───────────┬─────────────────────────┬───────────┬─────────────────────────┐
